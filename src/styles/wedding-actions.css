@@ -1,0 +1,59 @@
+.wedding_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.wedding_action_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1.5px solid #C3AE94;
+  background: linear-gradient(135deg, #f6efe2, #ead9bd);
+  color: #604C38;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 14px rgba(96, 76, 56, 0.12);
+}
+
+.wedding_action_btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ead9bd, #C3AE94);
+  color: #3d2f22;
+  box-shadow: 0 6px 18px rgba(96, 76, 56, 0.2);
+}
+
+.wedding_action_btn span {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media (max-width: 575px) {
+  .wedding_action_btn {
+    padding: 9px 14px;
+    font-size: 0.92rem;
+  }
+}
+.Wedding_card_main_wrapper .wedding_box2 .wedding_img_box {
+  -webkit-animation-duration: 20s !important;
+  -moz-animation-duration: 20s !important;
+  -o-animation-duration: 20s !important;
+  animation-duration: 20s !important;
+}
+
+
+@media (min-width: 992px) and (min-height: 900px) {
+  .Wedding_card_main_wrapper { transform: scale(0.88); }
+}
+@media (min-width: 992px) and (min-height: 1050px) {
+  .Wedding_card_main_wrapper { transform: scale(1); }
+}

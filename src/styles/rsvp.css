@@ -1,0 +1,165 @@
+/* RSVP — matches the wedding card's gold/cream aesthetic */
+
+.rsvp_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 14px 38px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(135deg, #c3ae94 0%, #a88a64 100%);
+  border: 1px solid #c3ae94;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px -12px rgba(168, 138, 100, 0.55);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.rsvp_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -14px rgba(168, 138, 100, 0.7);
+  background: linear-gradient(135deg, #cdb89c 0%, #b3946d 100%);
+}
+
+.rsvp_btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.rsvp_btn span {
+  display: inline-block;
+}
+
+/* Dialog */
+
+.rsvp_dialog {
+  max-width: 480px !important;
+  background: #fdfaf4 !important;
+  border: 1px solid rgba(195, 174, 148, 0.4) !important;
+  border-radius: 14px !important;
+  padding: 32px 28px !important;
+  font-family: "Lato", sans-serif;
+  color: #5a4a35;
+  box-shadow: 0 30px 80px -30px rgba(120, 90, 55, 0.35) !important;
+}
+
+.rsvp_dialog_title {
+  font-family: "Allura", "Ephesis", cursive !important;
+  font-weight: 400 !important;
+  font-size: 44px !important;
+  line-height: 1 !important;
+  color: #8a6f4d !important;
+  text-align: center;
+  margin-bottom: 6px !important;
+}
+
+.rsvp_dialog_desc {
+  font-family: "Lato", sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #8a7c66 !important;
+  margin-bottom: 8px !important;
+}
+
+.rsvp_form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.rsvp_field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rsvp_field label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8a6f4d;
+}
+
+.rsvp_field input,
+.rsvp_field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #3d3325;
+  background: #ffffff;
+  border: 1px solid rgba(195, 174, 148, 0.55);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+.rsvp_field input:focus,
+.rsvp_field textarea:focus {
+  border-color: #a88a64;
+  box-shadow: 0 0 0 3px rgba(195, 174, 148, 0.2);
+}
+
+.rsvp_choice_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.rsvp_choice {
+  padding: 12px 14px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a6f4d;
+  background: #ffffff;
+  border: 1px solid rgba(195, 174, 148, 0.6);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rsvp_choice:hover {
+  background: #faf3e7;
+}
+
+.rsvp_choice.is-active {
+  color: #ffffff;
+  background: linear-gradient(135deg, #c3ae94 0%, #a88a64 100%);
+  border-color: #a88a64;
+  box-shadow: 0 6px 18px -8px rgba(168, 138, 100, 0.6);
+}
+
+.rsvp_error {
+  font-size: 12px;
+  color: #b04a3a;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.rsvp_submit {
+  margin-top: 6px;
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .rsvp_dialog {
+    max-width: calc(100vw - 32px) !important;
+    padding: 24px 20px !important;
+  }
+  .rsvp_dialog_title {
+    font-size: 36px !important;
+  }
+}
